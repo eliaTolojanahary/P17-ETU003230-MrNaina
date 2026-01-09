@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulaire</title>
 </head>
-<body>
+<body> 
 <p>Inserer votre depense <p>
     <form name="form1" method="post" action="AjoutDep">
 
