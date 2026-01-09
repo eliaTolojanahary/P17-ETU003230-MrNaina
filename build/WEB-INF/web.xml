@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+                            https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+    <!-- Définition des servlets -->
+    <servlet>
+        <servlet-name>PrevisionServlet</servlet-name>
+        <servlet-class>com.itu.hello.PrevisionServlet</servlet-class>
+    </servlet>
+     <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.itu.hello.LoginServlet</servlet-class>
+    </servlet>
+        <servlet>
+        <servlet-name>DepenseServlet</servlet-name>
+        <servlet-class>com.itu.hello.DepenseServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EtatServlet</servlet-name>
+        <servlet-class>com.itu.hello.EtatServlet</servlet-class>
+    </servlet>
+   
+
+    
+    <!-- Mapping des servlets -->
+
+    <servlet-mapping>
+        <servlet-name>PrevisionServlet</servlet-name>
+        <url-pattern>/formDepense</url-pattern>
+        
+    </servlet-mapping>
+     <servlet-mapping>
+        <servlet-name>PrevisionServlet</servlet-name>
+        <url-pattern>/AjoutPrev</url-pattern>
+        
+    </servlet-mapping>
+         <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/log</url-pattern>
+        
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/</url-pattern>
+        
+    </servlet-mapping>
+     <servlet-mapping>
+        <servlet-name>DepenseServlet</servlet-name>
+        <url-pattern>/AjoutDep</url-pattern>
+        
+    </servlet-mapping>
+     <servlet-mapping>
+        <servlet-name>EtatServlet</servlet-name>
+        <url-pattern>/etat</url-pattern>
+        
+    </servlet-mapping>
+       
+
+</web-app>
